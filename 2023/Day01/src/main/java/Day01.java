@@ -49,7 +49,7 @@ public class Day01 {
     }
 
     public static Integer extractNumber(String input) {
-        var numberList= List.of("one","two","three","four","five","six", "seven","eight","nine");
+        var numberList= new String[]{"one","two","three","four","five","six", "seven","eight","nine"};
         int lowestIndex = Integer.MAX_VALUE;
         int lowestDigit = -1;
         int highestIndex = Integer.MIN_VALUE;
@@ -70,14 +70,14 @@ public class Day01 {
         }
 
 
-        for (int i=0; i < numberList.size(); i++) {
-            int index = input.indexOf(numberList.get(i));
+        for (int i=0; i < numberList.length; i++) {
+            int index = input.indexOf(numberList[i]);
             if (index != -1 && index < lowestIndex) {
                lowestIndex = index;
                lowestDigit = i+1;
             }
 
-            index = input.lastIndexOf(numberList.get(i));
+            index = input.lastIndexOf(numberList[i]);
             if (index != -1 && index > highestIndex) {
                 highestIndex = index;
                 highestDigit = i+1;
