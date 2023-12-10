@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.dev.aoc-2023</groupId>
-    <artifactId>Day04</artifactId>
+    <artifactId>Day07</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>AOC 2023 Day 04</name>
+    <name>AOC 2023 Day 07</name>
 
 
     <properties>
